@@ -5,11 +5,11 @@
 using namespace std;
 /* Bei dieser Aufgabe wird Zufallszahlen von 1 bis 10
 genriert und der Nutzer muss diese Zahlen erraten */
-/* Dabei hat der Nutzer nur fünf Versuche	*/
+/* Dabei hat der Nutzer nur fÃ¼nf Versuche	*/
 void begruessung()
 {
 	cout << "HALLO UND HERZLICH WILLKOMMEN !!" << endl
-		<< "Bei diesem Programm können Sie Zahl Zufallszahlen erraten ";
+		<< "Bei diesem Programm koennen Sie Zufallszahlen erraten ";
 }
 void easy_mode()
 {
@@ -138,6 +138,8 @@ void menu()
 
 	char input = ' ';
 	begruessung();
+	cout<<"\n\n";
+	
 	while (input != '4' && input != 'q')
 	{
 		cout << "WAEHLEN SIE DIE SCHWERIGKEIT AUS: " << endl
