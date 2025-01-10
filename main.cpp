@@ -4,7 +4,7 @@
 
 using namespace std;
 /* Bei dieser Aufgabe wird Zufallszahlen von 1 bis 10
-genriert und der Nutzer muss diese Zahlen erraten */
+generiert und der Nutzer muss diese Zahlen erraten */
 /* Dabei hat der Nutzer nur fünf Versuche	*/
 void begruessung()
 {
@@ -29,11 +29,11 @@ void easy_mode()
 
 	while (true)
 	{
-		cout << "Geb biit eine Zahl zwischen 1 und 10 ein: ";
+		cout << "Gib bitte eine Zahl zwischen 1 und 10 ein: ";
 		cin >> eingabe;
 		if (eingabe != zufallszahl)
 		{
-			// Wenn man die Zahl falsch errät , wird das angezeigt und die Varable "versuche" wird um 1 erhöht 
+			// Wenn man die Zahl falsch errät , wird das angezeigt und die Variable "versuche" wird um 1 erhöht 
 			cout << "\nFalsch!! " << "\n";
 			versuche++;
 			// Hier wird dem Nutzer gesagt, ob die Zahl größer oder kleiner ist
@@ -51,12 +51,12 @@ void easy_mode()
 		{
 			cout << "Du hast richtig erraten" << "\n";
 			cout << "Du hast " << versuche << " Versuche gebraucht " << "\n\n";
-			// Wenn die man weniger als 3 Versucht brauchte, kann der Nutzer dirkt einen schweren Modus wählen
+			// Wenn die man weniger als 3 Versucht brauchte, kann der Nutzer direkt einen schweren Modus wählen
 			if (versuche < 3)
 			{
 				char weiter;
 				cout << "Du hast super gespielt!! " << "\n\n"
-					<< "Willst du was Schwerigeres auspropieren ? (J)a/(N)ein??";
+					<< "Willst du was Schwierigeres ausprobieren ? (J)a/(N)ein??";
 				cin >> weiter;
 				if (weiter == 'j' || weiter == 'J')
 				{
@@ -72,7 +72,7 @@ void easy_mode()
 			break;
 		}
 
-		// Wenn man keine Versuche mahr hat, endt das Spiel 
+		// Wenn man keine Versuche mahr hat, endet das Spiel 
 		// Die Schleife wird dementsprechend unterbrochen
 
 		if (versuche == 5)
@@ -95,7 +95,7 @@ void medium_mode()
 
 		while (true)
 		{
-			cout << "Geb bitte eine Zahl zwischen 1 und 25 ein: ";
+			cout << "Gib bitte eine Zahl zwischen 1 und 25 ein: ";
 			cin >> eingabe;
 			if (eingabe != zufallszahl)
 			{
@@ -120,7 +120,7 @@ void medium_mode()
 				{
 					char weiter;
 					cout << "Du hast toll gespielt!!,du musst auf dich Stolz sein " << "\n\n"
-						<< "Willst du den schwirigesten Modus auspropieren (J)a/(N)ein??";
+						<< "Willst du den schwierigsten Modus ausprobieren (J)a/(N)ein??";
 					cin >> weiter;
 					if (weiter == 'j' || weiter == 'J')
 					{
@@ -139,7 +139,7 @@ void medium_mode()
 				char choise;
 				cout << "Du hast keine Versuche mehr." << "\n";
 				cout << "Loser!!"<<endl;
-				cout << "Willst du was Einfacheres auspropieren (J)a, (N)ein danke "<<"\n\n";
+				cout << "Willst du was Einfacheres ausprobieren (J)a, (N)ein danke "<<"\n\n";
 				cin >> choise;
 				if (choise=='j'||choise=='J')
 				{
@@ -147,7 +147,7 @@ void medium_mode()
 				}
 				else
 				{
-					cout << "\nDas schaffst du bestimmt jetzt, versuch einfach nochmal!!" << endl;
+					cout << "\nDas schaffst du bestimmt jetzt, versuche einfach nochmal!!" << endl;
 					break;
 				}
 				
@@ -169,7 +169,7 @@ void medium_mode()
 
 		while (true)
 		{
-			cout << "Geb biite eine Zahl zwischen 1 und 50 ein: ";
+			cout << "Gib biite eine Zahl zwischen 1 und 50 ein: ";
 			cin >> eingabe;
 			if (eingabe != zufallszahl)
 			{
@@ -193,7 +193,7 @@ void medium_mode()
 					char input;
 					cout << " Du hast wunderschoen gespielt!!." << endl
 						<< " Du bist wirklich ein Held " << "\n\n"
-						<< "Willst du den Hidden Modus auspropieren ? (J)a, (N)ein " << "\n\n";
+						<< "Willst du den Hidden Modus ausprobieren ? (J)a, (N)ein " << "\n\n";
 					cin >> input;
 					if (input == 'j' || input == 'J')
 					{
@@ -212,7 +212,7 @@ void medium_mode()
 				char choise;
 				cout << "Du hast keine Versuche mehr." << "\n\n";
 				cout << "Du hast sehr gut gespielt" << "\n\n"
-					<< "Willst du was Einfacheres auspropieren? (J)a, (N)ein danke. " << "\n";
+					<< "Willst du was Einfacheres ausprobieren? (J)a, (N)ein danke. " << "\n";
 				cin >> choise;
 				if (choise == 'j' || choise == 'J')
 				{
@@ -239,7 +239,7 @@ void hidden_modus()
 
 		while (true)
 		{
-			cout << "GEBE BITTE EINE ZAHL ZWISCHEN 1 UND 100 EIN: "<<endl;
+			cout << "GIB BITTE EINE ZAHL ZWISCHEN 1 UND 100 EIN: "<<endl;
 			cin >> eingabe;
 			if (eingabe != zufallszahl)
 			{
@@ -268,7 +268,7 @@ void hidden_modus()
 			{
 				char input;
 				cout << "DU HAST LEIDER KEINE VERSUCHE MEHR !!" << endl
-					<< "Willst du was Einfaches ausprobieren ? (J)a,(N)ein  ";
+					<< "Willst du was Einfacheres ausprobieren ? (J)a,(N)ein  ";
 				cin >> input;
 				if (input == 'j' || input == 'J')
 				{
@@ -294,7 +294,7 @@ void menu()
 
 	while (input != '4' && input != 'q')
 	{
-		cout << "WAEHLE DIE SCHWERIGKEIT AUS: " << endl
+		cout << "WAEHLE DIE SCHWIERIGKEIT AUS: " << endl
 			<< "(1) EINFACH" << endl
 			<< "(2) MITTEL" << endl
 			<< "(3) SCHWER " << endl
